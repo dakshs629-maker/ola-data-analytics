@@ -119,5 +119,7 @@ pip install -r requirements.txt
 streamlit run streamlit.py
 ```
 
+---
+
 **Developed by Daksh Sharma** | *Data Analytics & Business Intelligence Portfolio*
 
