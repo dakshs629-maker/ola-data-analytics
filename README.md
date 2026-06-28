@@ -1,12 +1,12 @@
-# 🚖 Ola Ride Analytics — End-to-End Data Portfolio
+# Ola Ride Analytics — End-to-End Data Portfolio
 
 Ola processes millions of rides daily across India, yet operational leakage — from driver cancellations, incomplete rides, and peak-hour supply-demand mismatches — directly erodes both revenue and platform trust. This project quantifies where and why rides fail, statistically validates whether peak-hour behaviour differs from off-peak, and surfaces the revenue implications of operational gaps across vehicle types.
 
-### 🔗 Live Dashboard: [ola-data-analytics-e9jsowul8qsu99z6odvwbj.streamlit.app](https://ola-data-analytics-e9jsowul8qsu99z6odvwbj.streamlit.app/)
+### Live Dashboard: [ola-data-analytics-e9jsowul8qsu99z6odvwbj.streamlit.app](https://ola-data-analytics-e9jsowul8qsu99z6odvwbj.streamlit.app/)
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 The full pipeline spans four layers: **Extraction (SQL)** → **Statistical Validation (Python)** → **Business Intelligence (Power BI)** → **Interactive Deployment (Streamlit)** — built on a dataset of 100,000+ ride records from Bangalore.
 
@@ -18,7 +18,7 @@ The full pipeline spans four layers: **Extraction (SQL)** → **Statistical Vali
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 **1. Revenue-Risk in Prime Sedan**
 Prime Sedan generates the highest revenue per ride but has the widest spread between maximum and minimum driver ratings across all vehicle types. This signals inconsistent service quality — a churn risk in the premium segment where customer switching cost is lowest and competition from Uber Black is most direct.
@@ -39,7 +39,7 @@ Incomplete rides represent lost fare revenue plus potential driver penalty expos
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 | Layer | Tool | Purpose |
 | :--- | :--- | :--- |
@@ -50,7 +50,7 @@ Incomplete rides represent lost fare revenue plus potential driver penalty expos
 
 ---
 
-## 🗄️ SQL Highlights
+## SQL Highlights
 
 Beyond standard aggregations, the SQL layer includes:
 
@@ -88,7 +88,7 @@ ORDER BY Cancellation_Rate_Pct DESC;
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | File | Description |
 | :--- | :--- |
@@ -101,7 +101,7 @@ ORDER BY Cancellation_Rate_Pct DESC;
 
 ---
 
-## ⚙️ Installation & Usage
+## Installation & Usage
 
 **1. Clone the repository:**
 ```bash
@@ -118,16 +118,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run streamlit.py
 ```
-
----
-
-## 🛠️ Roadmap
-
-- **Near-term:** Logistic regression model (`sklearn`) to predict ride cancellation probability based on time-of-day, vehicle type, and pickup zone — no additional certification required.
-- **Post-certification:** XGBoost cancellation model with SHAP explainability for feature interpretation; transition from static CSV to live MySQL connection.
-- **Long-term:** Real-time data pipeline for live operational monitoring.
-
----
 
 **Developed by Daksh Sharma** | *Data Analytics & Business Intelligence Portfolio*
 
